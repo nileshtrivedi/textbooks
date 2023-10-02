@@ -55,4 +55,13 @@ x-dot-machine {
 
   .cell-value { font-size: 24px; color: $blue; top: -34px; }
   .cell-order { font-size: 14px; color: $background; bottom: -20px; }
+
+    .add-dot { top: 0px; left: 0px; position: absolute; display: none;}
+    .add-antidot { top: 0px; right: 0px; position: absolute; display: none; }
+    .explode { bottom: 0px; left: 0px; position: absolute; display: none; }
+    .annihilate { bottom: 0px; right: 0px; position: absolute; display: none; } 
+    .dot-cell:hover .add-dot { display: block;}
+    .dot-cell:hover .add-antidot { display: block;}
+    .dot-cell:hover .explode { display: block;}
+    .dot-cell:hover .annihilate { display: block;}
 }

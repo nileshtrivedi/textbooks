@@ -78,13 +78,13 @@ export function dots($step: Step) {
   let xStep = 0;
 
   $machine.on('add', ({i, cell, point}) => {
-    if (i !== xStep + 1) {
-      return $step.addHint('incorrectCell', {class: 'incorrect'});
-    }
+    // if (i !== xStep + 1) {
+    //   return $step.addHint('incorrectCell', {class: 'incorrect'});
+    // }
 
     cell.addDotAntidot(point);
-    dStep = xStep + 1;
-    $step.score('d' + dStep);
+    // dStep = xStep + 1;
+    // $step.score('d' + dStep);
   });
 
   $btn.on('click', async function() {

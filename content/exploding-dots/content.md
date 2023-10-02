@@ -182,7 +182,7 @@ _equal_ to 1.
 If you’re not satisfied with this explanation, let’s have a look at what 0.9999…
 would look like in a [`1←10` machine](gloss:dot-machine):
 
-    x-dot-machine(cells="0.9999…")
+    x-dot-machine(cells="000000…", rule='{"from": [0, 0, 2], "to": [1, 0, 0]}', base='\phi')
     p.text-center.reveal(when="d1"): button.btn.btn-small.btn-red Explode
 
 Click anywhere in the [first decimal box](->#dots_.dot-decimal+.dot-cell)
